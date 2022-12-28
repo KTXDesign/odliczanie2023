@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Carnevalee Freakshow';
+  src: url(CarnevaleeFreakshow.ttf);
+}
+
 body {
-  font-family: montserrat, sans-serif;
+  font-family: 'Carnevalee Freakshow';
 }
 
 header {
@@ -15,10 +20,11 @@ header {
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  background-image: url("background.png"); 
+  /* background-image: url("background.png");   */
+  background-image: url("firework-2.gif"); 
   background-size: cover;
-  background-position: center;
-  position: relative;
+  /* background-position: center; */
+  /* position: relative; */
 }
 header:after {
   display: block;
@@ -29,7 +35,14 @@ header:after {
   right: 0;
   bottom: 0;
   z-index: 0;
-  background-color: rgba(34, 34, 34, 0.5);
+  /* background-color: rgba(34, 34, 34, 0.5); */
+}
+
+img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 header .content {
   position: relative;
@@ -111,8 +124,10 @@ header .content .countdown {
 }
 @media screen and (min-width: 1280px) {
   header .content .countdown {
-    font-size: 88px;
+    font-size: 300px;
   }
 }
+
+
 
 /*# sourceMappingURL=main.css.map */
